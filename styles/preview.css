@@ -1,0 +1,23 @@
+.preview-container {
+    margin-left: 20px;
+    height: 612px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    width: 163px;
+}
+
+.preview-img-wrapper {
+    cursor: pointer;
+    flex-grow: 1;
+    width: 137px;
+    padding: 40.25px 0;
+    margin-bottom: 21px;
+    background: #C4C4C4;
+}
+
+.preview-img-wrapper img {
+    width: 100%;
+    height: 53px;
+    object-fit: contain;
+}

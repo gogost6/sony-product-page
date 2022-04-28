@@ -1,0 +1,35 @@
+.features-container {
+    width: 100%;
+    height: 60px;
+    background: #29323d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features-container a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FDFDFD;
+    border: none;
+    text-decoration: none;
+}
+
+.feature-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-wrap img {
+    margin-right: 8px;
+}
+
+.feature-wrap h1 {
+    margin-left: 8px;
+}

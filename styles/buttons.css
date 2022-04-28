@@ -1,0 +1,45 @@
+.buy {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.3%;
+    letter-spacing: 0.03em;
+    color: #cad1da;
+    justify-content: space-between;
+    margin-bottom: 27.5px;
+}
+
+.buy button {
+    cursor: pointer;
+    height: 55px;
+    width: 370px;
+    text-align: center;
+}
+
+.buy button img {
+    height: 13.05px;
+    width: 18.38px;
+    margin-right: 16px;
+}
+
+.add-bucket {
+    border: none;
+    background: #161b21;
+    color: #cad1da;
+}
+
+.add-credit {
+    background: none;
+    border: 1px solid #ffbf46;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 0px 69px;
+}
+
+.add-credit span {
+    color: #ffbf46;
+    font-size: bold;
+}

@@ -1,0 +1,65 @@
+.description-container {
+    width: 771px;
+}
+
+.delivery-waranty,
+.other {
+    height: 24px;
+    align-items: center;
+}
+
+.delivery-waranty {
+    margin-bottom: 27px;
+}
+
+.delivery-waranty div:nth-child(1),
+.other div:nth-child(1) {
+    width: 176px;
+}
+
+.other div:nth-child(2) {
+    width: 64.03px;
+}
+
+.margin-right-text {
+    margin-right: 40px;
+}
+
+.delivery-waranty div:nth-child(2) {
+    width: 211.1px;
+}
+
+.delivery-waranty div:nth-child(3) {
+    flex-grow: 1;
+}
+
+.extend-waranty {
+    width: 770px;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background: #29323d;
+    padding: 18px;
+    margin-bottom: 24px;
+}
+
+.extend-waranty div h4 {
+    color: #ffbf46;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.extend-waranty a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #ffbf46;
+}
+
+
+

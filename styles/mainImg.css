@@ -1,0 +1,12 @@
+
+.main-img-wrap {
+    display: flex;
+    justify-content: center;
+    height: 612px;
+    width: 773px;
+    margin-right: 13px;
+}
+
+.main-img-wrap img {
+    height: 100%;
+}

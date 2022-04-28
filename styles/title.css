@@ -1,0 +1,38 @@
+.promotion {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.promotion button {
+    margin-right: 15.92px;
+    width: 158.08px;
+    height: 25px;
+    background: #ffbf46;
+    border-radius: 45px;
+    border: none;
+}
+
+.promotion p {
+    color: #5d656f;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.model-long {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #161b21;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #cad1da;
+}

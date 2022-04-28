@@ -1,0 +1,32 @@
+.chose-color {
+    margin-top: 45px;
+    margin-bottom: 44px;
+    margin-right: 13px;
+    height: 46px;
+    align-items: center;
+}
+
+.chose-color h4 {
+    margin-right: 14px;
+}
+
+.color-img-wrapper {
+    cursor: pointer;
+    display: flex;
+    height: 100%;
+    width: 46px;
+    margin-right: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-img-wrapper:hover {
+    border: 1px solid #5d656f;
+}
+
+.color-img-wrapper img {
+    height: 23.35px;
+    width: 36px;
+    background: #c4c4c4;
+    padding: 6px 0;
+}

@@ -1,0 +1,37 @@
+.search-container {
+    width: 403px;
+    height: 44.59px;
+    display: flex;
+}
+
+.search-container section {
+    cursor: pointer;
+    flex-basis: 10%;
+    border-bottom: 1px solid #5d656f;
+}
+
+.search-container section img {
+    height: 32.59px;
+    width: 32.59px;
+}
+
+.search-input {
+    color: #5d656f;
+    flex-basis: 90%;
+    background-color: transparent;
+    border: transparent;
+    border-bottom: 1px solid #5d656f;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.search-input::placeholder {
+    color: #5d656f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}

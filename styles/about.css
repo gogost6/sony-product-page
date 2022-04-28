@@ -1,0 +1,24 @@
+.product-about {
+    height: 47px;
+    display: flex;
+    align-items: center;
+}
+
+.category,
+.model {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0.02em;
+    color: #5d656f;
+}
+
+.category {
+    margin-left: 97px;
+    margin-right: 24px;
+}
+
+.model {
+    font-weight: 400;
+}
