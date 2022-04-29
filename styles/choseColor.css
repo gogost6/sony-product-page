@@ -1,7 +1,9 @@
 .chose-color {
+    position: relative;
     margin-top: 45px;
     margin-bottom: 44px;
     margin-right: 13px;
+    width: 300px;
     height: 46px;
     align-items: center;
 }
@@ -10,7 +12,36 @@
     margin-right: 14px;
 }
 
+.union.black {
+    left: 109px;
+}
+
+.union.gray {
+    left: 170px;
+}
+
+.union.blue {
+    left: 227px;
+}
+
+.union {
+    position: absolute;
+    top: -33px;
+    color: #FDFDFD;
+}
+
+.union img {
+    position: relative;
+}
+
+.union p {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+
 .color-img-wrapper {
+    position: relative;
     cursor: pointer;
     display: flex;
     height: 100%;
