@@ -8,6 +8,12 @@
     align-items: center;
 }
 
+.other a,
+.delivery-waranty p {
+    text-decoration: none;
+    color: #818A96;
+}
+
 .delivery-waranty {
     margin-bottom: 27px;
 }

@@ -10,6 +10,10 @@
     align-items: center;
 }
 
+.code p {
+    color: #5D656F;
+}
+
 .in-stock {
     margin-left: 8px;
     color: #0ebe98;
@@ -25,6 +29,12 @@
 
 .share-wrapper img {
     margin-right: 8.84px;
+    color: #161B21;
+}
+
+.share-wrapper a {
+    text-decoration: none;
+    color: #161B21;
 }
 
 .new {

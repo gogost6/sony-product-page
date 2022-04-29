@@ -1,5 +1,5 @@
-
 .main-img-wrap {
+    position: relative;
     display: flex;
     justify-content: center;
     height: 612px;
@@ -7,6 +7,8 @@
     margin-right: 13px;
 }
 
-.main-img-wrap img {
+.main-img {
     height: 100%;
+    width: 100%;
+    object-fit: contain;
 }

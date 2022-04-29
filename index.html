@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
         <link rel="stylesheet" href="responsive.css" />
-        <script defer src="./index.js"></script>
+        <script defer src="./colorHover.js"></script>
+        <script defer src="./changeImage.js"></script>
         <title>Sony</title>
     </head>
     <body>
@@ -61,39 +62,39 @@
             <div class="container flex-row">
                 <div class="preview-container">
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 1.png" alt="preview-img" />
+                        <img src="./assets/Sony 1.png" data-index="1" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 2.png" alt="preview-img" />
+                        <img src="./assets/Sony 2.png" data-index="2" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 3.png" alt="preview-img" />
+                        <img src="./assets/Sony 3.png" data-index="3" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 4.png" alt="preview-img" />
+                        <img src="./assets/Sony 4.png" data-index="4" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 5.png" alt="preview-img" />
+                        <img src="./assets/Sony 5.png" data-index="5" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 6.png" alt="preview-img" />
+                        <img src="./assets/Sony 6.png" data-index="6" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 1.png" alt="preview-img" />
+                        <img src="./assets/Sony 1.png" data-index="1" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 2.png" alt="preview-img" />
+                        <img src="./assets/Sony 2.png" data-index="2" alt="preview-img" />
                     </div>
                     <div class="preview-img-wrapper">
-                        <img src="./assets/Sony 3.png" alt="preview-img" />
+                        <img src="./assets/Sony 3.png" data-index="3" alt="preview-img" />
                     </div>
                 </div>
                 <div class="main-img-wrap">
-                    <img src="./assets/Sony 6.png" alt="main" />
+                    <img class="main-img" src="./assets/Sony 6.png" alt="main" />
                 </div>
                 <div class="description-container">
                     <div class="promotion flex-row">
-                        <button>Онлайн Промоция</button>
+                        <div><span>Онлайн Промоция</span></div>
                         <p>Офертата е валидна от 21.06.2021 до 14.07.2021</p>
                     </div>
                     <h1 class="title">Телевизор Sony BRAVIA XR MASTER Series A90J 65’</h1>
@@ -108,7 +109,7 @@
                         </div>
                         <div class="share-wrapper flex-row"> 
                             <img src="./assets/Share.svg" alt="share">
-                            <p>Сподели</p>
+                            <a href="#">Сподели</a>
                         </div>
                     </div>
                     <div class="price flex-row">
@@ -153,15 +154,15 @@
                     <div class="flex-row margin-right other"> 
                         <div class="flex-row margin-right-text">
                             <img src="./assets/Hearth.svg" alt="Hearth">
-                            <p>Добави в любими</p>
+                            <a href="#">Добави в любими</a>
                         </div>
                         <div class="flex-row margin-right-text">
                             <img src="./assets/Description.svg" alt="description">
-                            <p>Сравни</p>
+                            <a href="#">Сравни</a>
                         </div>
                         <div class="flex-row">
                             <img src="./assets/Download.svg" alt="Download">
-                            <p>Свали продуктов фиш</p>
+                            <a href="#">Свали продуктов фиш</a>
                         </div>
                     </div>
                 </div>
