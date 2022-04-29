@@ -1,10 +1,11 @@
 .preview-container {
-    margin-left: 20px;
+    margin-left: 19px;
+    margin-right: 13px;
     height: 612px;
     overflow: scroll;
     display: flex;
     flex-direction: column;
-    width: 163px;
+    width: 149px;
 }
 
 .preview-img-wrapper {
