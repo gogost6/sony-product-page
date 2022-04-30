@@ -15,6 +15,10 @@
     .add-credit {
         flex-basis: 48%;
     }
+
+    .preview-container {
+        min-width: 149px;
+    }
 }
 
 @media screen and (max-width: 1630px) {
