@@ -74,13 +74,11 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        /* animation-name: drop;
-        animation-duration: 1.2s;
-        animation-fill-mode: forwards; */
         transition: height 1.2s ease-in-out;
     }
 
-    .feature-wrap {
+    .feature-wrap,
+    .features-container a {
         height: 0px;
         visibility: hidden;
     }
@@ -111,8 +109,11 @@
         opacity: 1;
     }
 
-    .feature-wrap.active {
+
+    .feature-wrap.active,
+    .features-container a.active {
         visibility: visible;
+        height: auto !important;
     }
 }
 

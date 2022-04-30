@@ -21,8 +21,15 @@ document.addEventListener('click', function (e) {
 
     if (el.className === "fa-solid fa-grip-lines") {
         features.classList.toggle('active');
-        for (let index = 0; index < featureWrap.length; index++) {
-            featureWrap[index].classList.toggle('active');
+
+        for (let index = 0; index < features.children.length; index++) {
+            const curEl = features.children[index]
+            if(curEl.className === 'feature-wrap') {
+                curEl.classList.toggle('active');
+                curEl.children[1].classList.toggle('active');
+            } else {
+                curEl.classList.toggle('active');
+            }
         }
     } 
 
