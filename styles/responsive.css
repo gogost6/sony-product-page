@@ -271,3 +271,24 @@
         margin-bottom: 10px;
     }
 }
+
+@media screen and (max-width: 350px) {
+    body {
+        font-size-adjust: 0.32;
+    }
+
+    .sony-center {
+        width: 107px;
+        height: 17.8px;
+    }
+
+    .delivery-waranty div,
+    .other div {
+        margin-right: 0;
+    }
+
+    .preview-img-wrapper {
+        margin: 4px;
+        width: 65px;
+    }
+}
