@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
         <script src="https://kit.fontawesome.com/5db62948fe.js" crossorigin="anonymous"></script>
-        <script defer src="./colorHover.js"></script>
-        <script defer src="./changeImage.js"></script>
-        <script defer src="./responsive.js"></script>
+        <script defer src="./js/colorHover.js"></script>
+        <script defer src="./js/changeImage.js"></script>
+        <script defer src="./js/responsive.js"></script>
         <title>Sony</title>
     </head>
     <body>
@@ -62,36 +62,44 @@
         <main>
             <div class="container flex-row">
                 <div class="preview-container">
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="1" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 1.png" alt="preview-img" />
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="2" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 2.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="3" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 3.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="4" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 4.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="5" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 5.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper border" data-img="6" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 6.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="7" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 1.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="8" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 2.png" alt="preview-img"/>
                     </div>
-                    <div class="preview-img-wrapper" onclick="change(this)" onmouseover="change(this)">
+                    <div class="preview-img-wrapper" data-img="9" onclick="change(this)" onmouseover="change(this)">
                         <img src="./assets/Sony 3.png" alt="preview-img"/>
                     </div>
                 </div>
                 <div class="main-img-wrap">
-                    <img class="main-img" src="./assets/Sony 6.png" alt="main" />
+                    <img class="main-img" data-main="1" src="./assets/Sony 1.png" alt="main" >
+                    <img class="main-img" data-main="2" src="./assets/Sony 2.png" alt="main" >
+                    <img class="main-img" data-main="3" src="./assets/Sony 3.png" alt="main" >
+                    <img class="main-img" data-main="4" src="./assets/Sony 4.png" alt="main" >
+                    <img class="main-img" data-main="5" src="./assets/Sony 5.png" alt="main" >
+                    <img class="main-img" data-main="6" src="./assets/Sony 6.png" alt="main" >
+                    <img class="main-img" data-main="7" src="./assets/Sony 1.png" alt="main" >
+                    <img class="main-img" data-main="8" src="./assets/Sony 2.png" alt="main" >
+                    <img class="main-img current" data-main="9" src="./assets/Sony 6.png" alt="main" />
                 </div>
                 <div class="description-container">
                     <div class="promotion flex-row">
