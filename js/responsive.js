@@ -129,19 +129,5 @@ window.addEventListener('resize', function () {
         sector.remove();
         searchContainer.prepend(search);
     }
-
-    if (window.innerWidth <= 1630) {
-        const previewContainer = document.querySelector('.preview-container');
-        const clone = previewContainer.cloneNode(true);
-
-        previewContainer.remove();
-        mainImgContainer.append(clone);
-    } else {
-        const previewContainer = document.querySelector('.preview-container');
-        const clone = previewContainer.cloneNode(true);
-
-        previewContainer.remove();
-        container.prepend(clone);
-    }
 });
 
