@@ -7,6 +7,11 @@ const dropBtn = () => {
     return el;
 }
 
+const container = document.querySelector('.container');
+const mainImgContainer = document.querySelector('.main-img-wrap');
+const searchContainer = document.querySelector('.search-container');
+const sonyCenter = document.querySelector('.sony-center');
+
 document.addEventListener('click', function (e) {
     const el = e.target;
     const features = document.querySelector('.features-container');
@@ -18,6 +23,44 @@ document.addEventListener('click', function (e) {
             featureWrap[index].classList.toggle('active');
         }
     } 
+
+    const contactsWrapper = document.querySelector('.contacts-wrapper');
+
+    if (window.innerWidth <= 1026 && el.className === "search-icon") { 
+        sonyCenter.style.display = 'none';
+        const closeI = document.createElement('i');
+        closeI.className = 'fa-solid fa-x close-i';
+
+        const searchIcon = document.querySelector('.search-icon-wrapper');
+        const searchIconClone = searchIcon.cloneNode(true);
+        searchIconClone.classList.add('clicked');
+        searchIcon.remove();
+        const searchInput = document.querySelector('.search-input');
+        searchContainer.prepend(searchIconClone);
+        searchContainer.append(closeI);
+        
+        searchContainer.style.display = 'flex';
+        contactsWrapper.style.display = 'none';
+        searchInput.style.display = 'block';
+    }
+
+    if (el.className === "fa-solid fa-x close-i") {
+        const closeI = document.querySelector('.close-i');
+        const searchIcon = document.querySelector('.search-icon-wrapper');
+        const searchInput = document.querySelector('.search-input');
+        const searchIconClone = searchIcon.cloneNode(true);
+
+        sonyCenter.style.display = 'block';
+
+        searchInput.style.display = 'none';
+        searchInput.value = '';
+
+        searchIconClone.classList.remove('clicked');
+        closeI.remove();
+        contactsWrapper.prepend(searchIconClone);
+        contactsWrapper.style.display = 'flex';
+        searchIcon.remove();
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -35,14 +78,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (window.innerWidth <= 1630) {
-        const mainImgContainer = document.querySelector('.main-img-wrap')
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
 
         previewContainer.remove();
         mainImgContainer.append(clone);
     } else {
-        const container = document.querySelector('.container');
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
 
@@ -52,6 +93,10 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('resize', function () {
+    if(window.innerWidth <= 1260) {
+        document.querySelector('.search-input').style.display = 'block';
+    }
+
     if (window.innerWidth <= 1260 && document.querySelector('.fa-grip-lines') === null) {
         document.querySelector('.contacts-wrapper').appendChild(dropBtn());
     }
@@ -60,31 +105,30 @@ window.addEventListener('resize', function () {
         document.querySelector('.fa-grip-lines').remove();
     }
 
-    if (window.innerWidth <= 1026) {
+    if (window.innerWidth <= 1026 && searchContainer.children[0].className !== 'search-icon-wrapper clicked') {
         const sector = document.querySelector('.search-icon-wrapper')
         const search = sector.cloneNode(true);
         const contactsWrapper = document.querySelector('.contacts-wrapper');
-
+        
+        searchContainer.style.display = 'none';
         sector.remove();
         contactsWrapper.prepend(search);
     } else {
         const sector = document.querySelector('.search-icon-wrapper')
         const search = sector.cloneNode(true);
-        const searchContainer = document.querySelector('.search-container');
 
+        searchContainer.style.display = 'flex';
         sector.remove();
         searchContainer.prepend(search);
     }
 
     if (window.innerWidth <= 1630) {
-        const mainImgContainer = document.querySelector('.main-img-wrap')
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
 
         previewContainer.remove();
         mainImgContainer.append(clone);
     } else {
-        const container = document.querySelector('.container');
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
 

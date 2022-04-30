@@ -35,3 +35,14 @@
     letter-spacing: 0em;
     text-align: left;
 }
+
+.close-i {
+    color: #5d656f;
+    cursor: pointer;
+    border: 1px solid #5d656f;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}

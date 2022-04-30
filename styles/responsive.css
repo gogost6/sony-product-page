@@ -133,6 +133,15 @@
         margin-right: 10px;
     }
 
+    .product-about {
+        justify-content: space-around;
+        margin: 0 174px;
+    }
+
+    .product-about p {
+        margin: 0;
+    }
+
     .search-icon-wrapper {
         border-bottom: none;
         margin-right: 15px;
@@ -145,9 +154,19 @@
     .contacts-wrapper {
         flex-basis: 27%;
     }
+
+    .search-icon-wrapper.clicked {
+        flex-basis: auto;
+        margin: 0;
+        border-bottom: 1px solid #5d656f;
+    }
+
+    .search-container {
+        width: 100%;
+    }
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 640px) {
     .container {
         flex-direction: column;
     }
@@ -162,9 +181,81 @@
         width: 100%;
     }
 
+    .product-about {
+        margin: 0;
+    }
+
     .description-container {
         width: 100%;
         padding: 0 30px;
         margin: 10px 0;
+    }
+
+    .preview-container {
+        height: 75px;
+    }
+
+    .preview-img-wrapper {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    body {
+        font-size-adjust: 0.36;
+    }
+
+    header {
+        height: 73.9px;
+    }
+
+    .contacts-wrapper {
+        height: 50px;
+    }
+
+    .search-icon-wrapper img {
+        height: 20px;
+        width: 20px;
+    }
+
+    .user,
+    .cart {
+        width: 30px;
+        height: 30px;
+    }
+
+    .user img,
+    .cart img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .sony-center {
+        width: 150px;
+        height: 25px;
+    }
+
+    .buy {
+        height: 104.2px;
+        flex-direction: column;
+    }
+
+    .add-bucket {
+        margin-bottom: 10px;
+    }
+
+    .add-credit,
+    .add-bucket {
+        width: 100% !important;
+        height: 50px !important;
+    }
+
+    .container {
+        margin: 0;
+    }
+
+    .extend-waranty {
+        margin-bottom: 10px;
     }
 }
