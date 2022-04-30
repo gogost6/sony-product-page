@@ -38,7 +38,7 @@
     .telephone-container {
         display: none;
     }
-    
+
     .features-container {
         height: 0px;
     }
@@ -96,37 +96,34 @@
     .feature-wrap.active {
         visibility: visible;
     }
-    
-    /* .hide {
-        animation-name: hide;
-        animation-duration: 1.2s;
-        animation-fill-mode: forwards;
-    } */
-
-    /* .show {
-    } */
 }
 
-@keyframes drop {
-    from {
-        height: 0px;
-        opacity: 0;
+@media screen and (max-width: 1026px) {
+    header img {
+        width: 200px;
+        height: 50px;
     }
 
-    to {
-        opacity: 1;
-        height: 99vh;
-    }
-}
-
-@keyframes hide {
-    from {
-        height: 99vh;
+    .search-container {
+        width: auto;
     }
 
-    to {
-        height: 0px;
-        opacity: 0;
+    .user,
+    .cart,
+    .search-icon-wrapper {
+        margin-right: 10px;
+    }
+
+    .search-icon-wrapper {
+        border-bottom: none;
+        margin-right: 15px;
+    }
+
+    .search-container input {
         display: none;
+    }
+
+    .contacts-wrapper {
+        flex-basis: 27%;
     }
 }

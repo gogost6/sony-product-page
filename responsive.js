@@ -24,6 +24,15 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 1260) {
         document.querySelector('.contacts-wrapper').appendChild(dropBtn());
     }
+
+    if (window.innerWidth <= 1026) {
+        const sector = document.querySelector('.search-icon-wrapper')
+        const search = sector.cloneNode(true);
+        console.log(search);
+        const contactsWrapper = document.querySelector('.contacts-wrapper');
+        sector.remove();
+        contactsWrapper.prepend(search);
+    }
 });
 
 window.addEventListener('resize', function () {
@@ -33,6 +42,15 @@ window.addEventListener('resize', function () {
 
     if (window.innerWidth > 1260 && document.querySelector('.fa-grip-lines') !== null) {
         document.querySelector('.fa-grip-lines').remove();
+    }
+
+    if (window.innerWidth <= 1026) {
+        const sector = document.querySelector('.search-icon-wrapper')
+        const search = sector.cloneNode(true);
+        console.log(search);
+        const contactsWrapper = document.querySelector('.contacts-wrapper');
+        sector.remove();
+        contactsWrapper.prepend(search);
     }
 });
 

@@ -4,13 +4,13 @@
     display: flex;
 }
 
-.search-container section {
+.search-icon-wrapper {
     cursor: pointer;
     flex-basis: 10%;
     border-bottom: 1px solid #5d656f;
 }
 
-.search-container section img {
+.search-icon-wrapper img {
     height: 32.59px;
     width: 32.59px;
 }
