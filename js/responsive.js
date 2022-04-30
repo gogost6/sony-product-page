@@ -13,11 +13,11 @@ const searchContainer = document.querySelector('.search-container');
 const sonyCenter = document.querySelector('.sony-center');
 const descriptionContainer = document.querySelector('.description-container');
 const contactsWrapper = document.querySelector('.contacts-wrapper');
+const features = document.querySelector('.features-container');
+const featureWrap = document.querySelectorAll('.feature-wrap');
 
 document.addEventListener('click', function (e) {
     const el = e.target;
-    const features = document.querySelector('.features-container');
-    const featureWrap = document.querySelectorAll('.feature-wrap');
 
     if (el.className === "fa-solid fa-grip-lines") {
         features.classList.toggle('active');
