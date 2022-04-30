@@ -24,8 +24,9 @@ document.addEventListener('click', function (e) {
 
         for (let index = 0; index < features.children.length; index++) {
             const curEl = features.children[index]
-            if(curEl.className === 'feature-wrap') {
+            if (curEl.className === 'feature-wrap' || curEl.className === 'feature-wrap active') {
                 curEl.classList.toggle('active');
+                curEl.children[0].classList.toggle('active');
                 curEl.children[1].classList.toggle('active');
             } else {
                 curEl.classList.toggle('active');

@@ -78,9 +78,10 @@
     }
 
     .feature-wrap,
-    .features-container a {
+    .features-container a,
+    .feature-wrap img {
         height: 0px;
-        visibility: hidden;
+        font-size: 0px;
     }
 
     .feature-wrap {
@@ -90,7 +91,12 @@
         align-items: center;
         border-bottom: 1px solid white;
         flex-grow: 1;
-        transition: height 1.2s ease-in-out, visibility 1.2s linear;
+        transition: height 1.2s ease-in-out, visibility 1.2s linear, font-size 1.2s ease-in-out;
+    }
+
+    .features-container a,
+    .feature-wrap img {
+        transition: height 1.2s ease-in-out, visibility 1.2s linear, font-size 1.2s ease-in-out;
     }
 
     .features-container .normal {
@@ -111,9 +117,11 @@
 
 
     .feature-wrap.active,
-    .features-container a.active {
+    .features-container a.active,
+    .feature-wrap img.active {
         visibility: visible;
         height: auto !important;
+        font-size: 14px;
     }
 }
 
