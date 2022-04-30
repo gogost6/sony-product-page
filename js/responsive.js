@@ -12,6 +12,7 @@ const mainImgContainer = document.querySelector('.main-img-wrap');
 const searchContainer = document.querySelector('.search-container');
 const sonyCenter = document.querySelector('.sony-center');
 const descriptionContainer = document.querySelector('.description-container');
+const contactsWrapper = document.querySelector('.contacts-wrapper');
 
 document.addEventListener('click', function (e) {
     const el = e.target;
@@ -25,18 +26,17 @@ document.addEventListener('click', function (e) {
         }
     } 
 
-    const contactsWrapper = document.querySelector('.contacts-wrapper');
-
     if (window.innerWidth <= 1026 && el.className === "search-icon") { 
-        sonyCenter.style.display = 'none';
-        const closeI = document.createElement('i');
-        closeI.className = 'fa-solid fa-x close-i';
-
         const searchIcon = document.querySelector('.search-icon-wrapper');
         const searchIconClone = searchIcon.cloneNode(true);
+        const searchInput = document.querySelector('.search-input');
+        const closeI = document.createElement('i');
+        closeI.className = 'fa-solid fa-x close-i';
+        
+        sonyCenter.style.display = 'none';
+
         searchIconClone.classList.add('clicked');
         searchIcon.remove();
-        const searchInput = document.querySelector('.search-input');
         searchContainer.prepend(searchIconClone);
         searchContainer.append(closeI);
         
@@ -72,7 +72,6 @@ document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 1026) {
         const sector = document.querySelector('.search-icon-wrapper')
         const search = sector.cloneNode(true);
-        const contactsWrapper = document.querySelector('.contacts-wrapper');
 
         sector.remove();
         contactsWrapper.prepend(search);
@@ -116,7 +115,6 @@ window.addEventListener('resize', function () {
     if (window.innerWidth <= 1026 && searchContainer.children[0].className !== 'search-icon-wrapper clicked') {
         const sector = document.querySelector('.search-icon-wrapper')
         const search = sector.cloneNode(true);
-        const contactsWrapper = document.querySelector('.contacts-wrapper');
         
         searchContainer.style.display = 'none';
         sector.remove();
