@@ -274,12 +274,17 @@
 
 @media screen and (max-width: 350px) {
     body {
-        font-size-adjust: 0.32;
+        font-size-adjust: 0.28;
     }
 
     .sony-center {
         width: 107px;
         height: 17.8px;
+    }
+
+    .delivery-waranty,
+    .other {
+        width: 100%;
     }
 
     .delivery-waranty div,
@@ -290,5 +295,10 @@
     .preview-img-wrapper {
         margin: 4px;
         width: 65px;
+    }
+
+    .chose-color {
+        margin-right: 0;
+        width: 100%;
     }
 }
