@@ -1,5 +1,6 @@
 const mainImg = document.querySelector(".main-img");
+const allPreview = document.querySelectorAll('.preview-img-wrapper');
 
-const change = src => {
-    mainImg.src = src
+const change = (e) => {
+    mainImg.src = e.children[0].src;
 }
