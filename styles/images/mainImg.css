@@ -1,15 +1,28 @@
 .main-img-wrap {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 612px;
+    height: 599px;
     width: 773px;
     margin-right: 13px;
     background-color: #F1F5F9;
 }
 
 .main-img {
+    opacity: 0;
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: contain;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.current {
+    opacity: 1;
+}
+
+.all-wrap {
+    position: relative;
+    height: 100%;
 }

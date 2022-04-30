@@ -11,6 +11,7 @@ const container = document.querySelector('.container');
 const mainImgContainer = document.querySelector('.main-img-wrap');
 const searchContainer = document.querySelector('.search-container');
 const sonyCenter = document.querySelector('.sony-center');
+const descriptionContainer = document.querySelector('.description-container');
 
 document.addEventListener('click', function (e) {
     const el = e.target;
@@ -89,6 +90,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         previewContainer.remove();
         container.prepend(clone);
+    }
+
+    if (window.innerWidth <= 640) { 
+        const cloneMainImgContainer = mainImgContainer.cloneNode(true);
+        mainImgContainer.style.display = 'none';
+
+        descriptionContainer.insertBefore(cloneMainImgContainer, descriptionContainer.children[3]);
     }
 });
 
