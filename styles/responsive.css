@@ -35,9 +35,12 @@
 }
 
 @media screen and (max-width: 1260px) {
-    .features-container,
     .telephone-container {
         display: none;
+    }
+    
+    .features-container {
+        height: 0px;
     }
 
     .contacts-wrapper {
@@ -46,13 +49,20 @@
     }
 
     .features-container {
-        display: none;
         width: 100%;
-        height: 99vh;
         background: #29323d;
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
+        /* animation-name: drop;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards; */
+        transition: height 1.2s ease-in-out;
+    }
+
+    .feature-wrap {
+        height: 0px;
+        visibility: hidden;
     }
 
     .feature-wrap {
@@ -63,6 +73,7 @@
         border-bottom: 1px solid white;
         flex-grow: 1;
         padding-left: 50px;
+        transition: height 1.2s ease-in-out, visibility 1.2s linear;
     }
 
     .features-container .normal {
@@ -74,5 +85,48 @@
         align-items: center;
         padding-left: 50px;
         border-bottom: 1px solid white;
+    }
+
+    .features-container.active {
+        /* visibility: visible; */
+        height: 99vh;
+        opacity: 1;
+    }
+
+    .feature-wrap.active {
+        visibility: visible;
+    }
+    
+    /* .hide {
+        animation-name: hide;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards;
+    } */
+
+    /* .show {
+    } */
+}
+
+@keyframes drop {
+    from {
+        height: 0px;
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        height: 99vh;
+    }
+}
+
+@keyframes hide {
+    from {
+        height: 99vh;
+    }
+
+    to {
+        height: 0px;
+        opacity: 0;
+        display: none;
     }
 }

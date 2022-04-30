@@ -1,5 +1,3 @@
-console.log(window.innerWidth);
-
 const dropBtn = () => {
     const el = document.createElement('i');
     el.className = "fa-solid fa-grip-lines";
@@ -11,14 +9,16 @@ const dropBtn = () => {
 
 document.addEventListener('click', function (e) {
     const el = e.target;
-    const features = document.querySelector('.features-container').style.display;
+    const features = document.querySelector('.features-container');
+    const featureWrap = document.querySelectorAll('.feature-wrap');
 
-    if (el.className === "fa-solid fa-grip-lines" && (features === 'none' || features === '')) {
-        document.querySelector('.features-container').style.display = 'flex';
-    } else if (el.className === "fa-solid fa-grip-lines" && features === 'flex') {
-        document.querySelector('.features-container').style.display = 'none';
-    }
-})
+    if (el.className === "fa-solid fa-grip-lines") {
+        features.classList.toggle('active');
+        for (let index = 0; index < featureWrap.length; index++) {
+            featureWrap[index].classList.toggle('active');
+        }
+    } 
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth <= 1260) {
