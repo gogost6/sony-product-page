@@ -94,10 +94,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (window.innerWidth <= 640) { 
         const cloneMainImgContainer = mainImgContainer.cloneNode(true);
-        mainImgContainer.style.display = 'none';
+        mainImgContainer.remove();
 
         descriptionContainer.insertBefore(cloneMainImgContainer, descriptionContainer.children[3]);
-    }
+    } 
 });
 
 window.addEventListener('resize', function () {

@@ -1,8 +1,8 @@
-const nodes = document.querySelectorAll(".main-img");
 let allMainImages = Array.from(document.querySelectorAll(".main-img"));
 let allPreview = document.querySelectorAll('.preview-img-wrapper');
 
 const change = (e) => {
+    allMainImages = Array.from(document.querySelectorAll(".main-img"));
     const index = e.dataset.img;
     e.classList.add('border');
     
