@@ -215,6 +215,7 @@
 
 @media screen and (max-width: 514px) {
     body {
+        -webkit-text-size-adjust: 0.36;
         font-size-adjust: 0.36;
     }
 
@@ -274,6 +275,7 @@
 
 @media screen and (max-width: 350px) {
     body {
+        -webkit-text-size-adjust: 0.28;
         font-size-adjust: 0.28;
     }
 
