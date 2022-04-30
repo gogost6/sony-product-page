@@ -1,14 +1,17 @@
+@import "header/header.css";
+@import "header/search.css";
+@import "header/features.css";
+
+@import "images/preview.css";
+@import "images/mainImg.css";
+
+@import "description/about.css";
+@import "description/information.css";
+@import "description/title.css";
+@import "description/price.css";
+@import "description/choseColor.css";
+@import "description/buttons.css";
+
 @import "typography.css";
-@import "header.css";
-@import "features.css";
-@import "about.css";
-@import "preview.css";
-@import "information.css";
-@import "title.css";
-@import "price.css";
-@import "choseColor.css";
-@import "mainImg.css";
 @import "common.css";
-@import "buttons.css";
-@import "search.css";
 @import "responsive.css";
