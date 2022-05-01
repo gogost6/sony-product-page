@@ -39,15 +39,18 @@ document.addEventListener('click', function (e) {
         const searchIcon = document.querySelector('.search-icon-wrapper');
         const searchIconClone = searchIcon.cloneNode(true);
         const searchInput = document.querySelector('.search-input');
+        const iWrap = document.createElement('div');
+        iWrap.className = 'i-wrap';
         const closeI = document.createElement('i');
         closeI.className = 'fa-solid fa-x close-i';
+        iWrap.append(closeI);
         
         sonyCenter.style.display = 'none';
 
         searchIconClone.classList.add('clicked');
         searchIcon.remove();
         searchContainer.prepend(searchIconClone);
-        searchContainer.append(closeI);
+        searchContainer.append(iWrap);
         
         searchContainer.style.display = 'flex';
         contactsWrapper.style.display = 'none';

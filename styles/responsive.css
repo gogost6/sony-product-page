@@ -58,12 +58,12 @@
     .telephone-container {
         display: none;
     }
-    
+
     .contacts-wrapper {
         flex-basis: 16%;
         width: auto;
     }
-    
+
     .features-container {
         height: 0px;
         width: 100%;
@@ -230,10 +230,18 @@
 
     header {
         height: 73.9px;
+        padding: 0 24px;
     }
 
     .contacts-wrapper {
         height: 50px;
+    }
+
+    .search-icon-wrapper.clicked {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 7px;
     }
 
     .search-icon-wrapper img {

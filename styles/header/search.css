@@ -36,6 +36,12 @@
     text-align: left;
 }
 
+.i-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .close-i {
     color: #5d656f;
     cursor: pointer;
