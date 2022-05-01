@@ -27,6 +27,7 @@ document.addEventListener('click', function (e) {
             if (curEl.className === 'feature-wrap' || curEl.className === 'feature-wrap active') {
                 curEl.classList.toggle('active');
                 curEl.children[0].classList.toggle('active');
+                curEl.children[0].children[0].classList.toggle('active');
                 curEl.children[1].classList.toggle('active');
             } else {
                 curEl.classList.toggle('active');
