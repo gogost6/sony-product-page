@@ -110,7 +110,7 @@
     }
 
     .features-container.active {
-        height: 99vh;
+        height: 100vh;
     }
 
     .feature-wrap.active,
@@ -290,6 +290,18 @@
     .extend-waranty {
         margin-bottom: 10px;
     }
+
+    .union.blue {
+        left: 215px;
+    }
+
+    .union.gray {
+        left: 150px;
+    }
+
+    .union.black {
+        left: 83px;
+    }
 }
 
 @media screen and (max-width: 350px) {
@@ -338,11 +350,35 @@
         margin-right: 0;
         width: 100%;
     }
+
+    .union.blue {
+        left: 205px;
+    }
+
+    .union.gray {
+        left: 140px;
+    }
+
+    .union.black {
+        left: 73px;
+    }
 }
 
 @media screen and (max-width: 258px) {
     body {
         -webkit-text-size-adjust: 0.28;
         font-size-adjust: 0.28;
+    }
+
+    .union.blue {
+        left: 180px;
+    }
+
+    .union.gray {
+        left: 112px;
+    }
+
+    .union.black {
+        left: 44px;
     }
 }
