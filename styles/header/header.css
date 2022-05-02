@@ -26,7 +26,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px 46px 0px 16px;
+    width: 229px;
+    height: 48.63px;
 }
 
 .telephone-container p {
@@ -58,6 +59,7 @@ header {
 .telephone-wrapper img {
     height: 17.6px;
     width: 17.99px;
+    margin-right: 9.72px;
 }
 
 .telephone-text {
