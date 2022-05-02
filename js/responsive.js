@@ -7,14 +7,16 @@ const dropBtn = () => {
     return el;
 }
 
-const container = document.querySelector('.container');
-const mainImgContainer = document.querySelector('.main-img-wrap');
+let container = document.querySelector('.container');
+let mainImgContainer = document.querySelector('.main-img-wrap');
 const searchContainer = document.querySelector('.search-container');
 const sonyCenter = document.querySelector('.sony-center');
-const descriptionContainer = document.querySelector('.description-container');
+let descriptionContainer = document.querySelector('.description-container');
 const contactsWrapper = document.querySelector('.contacts-wrapper');
 const features = document.querySelector('.features-container');
 const featureWrap = document.querySelectorAll('.feature-wrap');
+let previewContainer = document.querySelector('.preview-container');
+
 
 document.addEventListener('click', function (e) {
     const el = e.target;
@@ -33,9 +35,9 @@ document.addEventListener('click', function (e) {
                 curEl.classList.toggle('active');
             }
         }
-    } 
+    }
 
-    if (window.innerWidth <= 1026 && el.className === "search-icon") { 
+    if (window.innerWidth <= 1026 && el.className === "search-icon") {
         const searchIcon = document.querySelector('.search-icon-wrapper');
         const searchIconClone = searchIcon.cloneNode(true);
         const searchInput = document.querySelector('.search-input');
@@ -44,14 +46,14 @@ document.addEventListener('click', function (e) {
         const closeI = document.createElement('i');
         closeI.className = 'fa-solid fa-x close-i';
         iWrap.append(closeI);
-        
+
         sonyCenter.style.display = 'none';
 
         searchIconClone.classList.add('clicked');
         searchIcon.remove();
         searchContainer.prepend(searchIconClone);
         searchContainer.append(iWrap);
-        
+
         searchContainer.style.display = 'flex';
         contactsWrapper.style.display = 'none';
         searchInput.style.display = 'block';
@@ -98,35 +100,53 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
-        
+
         previewContainer.remove();
         container.prepend(clone);
     }
 
-    if (window.innerWidth <= 640) { 
+    if (window.innerWidth <= 640) {
         const cloneMainImgContainer = mainImgContainer.cloneNode(true);
         mainImgContainer.remove();
 
         descriptionContainer.insertBefore(cloneMainImgContainer, descriptionContainer.children[3]);
-    } 
+    }
 });
 
 window.addEventListener('resize', function () {
-    if (window.innerWidth <= 1630) {
-        const previewContainer = document.querySelector('.preview-container');
-        const clone = previewContainer.cloneNode(true);
+    mainImgContainer = document.querySelector('.main-img-wrap');
+    previewContainer = document.querySelector('.preview-container');
+    container = document.querySelector('.container');
+    descriptionContainer = document.querySelector('.description-container');
 
-        previewContainer.remove();
-        mainImgContainer.append(clone);
-    } else {
-        const previewContainer = document.querySelector('.preview-container');
+    // Image Resizes
+    if (window.innerWidth > 1630) {
+        previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
 
         previewContainer.remove();
         container.prepend(clone);
+    } else if (window.innerWidth <= 1630 && window.innerWidth > 640) {
+        
+        if(container.children[0].className === 'preview-container') {
+            const clone = previewContainer.cloneNode(true);
+            
+            previewContainer.remove();
+            mainImgContainer.append(clone);
+        } else if (container.children[0].className === 'description-container') {
+            const clone = mainImgContainer.cloneNode(true);
+    
+            mainImgContainer.remove();
+            container.prepend(clone);
+        }
+    } else if (window.innerWidth <= 640) {
+
+        const cloneMainImgContainer = mainImgContainer.cloneNode(true);
+        mainImgContainer.remove();
+        descriptionContainer.insertBefore(cloneMainImgContainer, descriptionContainer.children[3]);
     }
 
-    if(window.innerWidth <= 1260) {
+    if (window.innerWidth <= 1260) {
         document.querySelector('.search-input').style.display = 'block';
     }
 
@@ -141,7 +161,7 @@ window.addEventListener('resize', function () {
     if (window.innerWidth <= 1026 && searchContainer.children[0].className !== 'search-icon-wrapper clicked') {
         const sector = document.querySelector('.search-icon-wrapper')
         const search = sector.cloneNode(true);
-        
+
         searchContainer.style.display = 'none';
         sector.remove();
         contactsWrapper.prepend(search);
