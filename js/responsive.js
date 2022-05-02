@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         const previewContainer = document.querySelector('.preview-container');
         const clone = previewContainer.cloneNode(true);
-
+        
         previewContainer.remove();
         container.prepend(clone);
     }
@@ -112,6 +112,20 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 window.addEventListener('resize', function () {
+    if (window.innerWidth <= 1630) {
+        const previewContainer = document.querySelector('.preview-container');
+        const clone = previewContainer.cloneNode(true);
+
+        previewContainer.remove();
+        mainImgContainer.append(clone);
+    } else {
+        const previewContainer = document.querySelector('.preview-container');
+        const clone = previewContainer.cloneNode(true);
+
+        previewContainer.remove();
+        container.prepend(clone);
+    }
+
     if(window.innerWidth <= 1260) {
         document.querySelector('.search-input').style.display = 'block';
     }
