@@ -2,6 +2,7 @@
     height: 47px;
     display: flex;
     align-items: center;
+    margin-bottom: 9px;
 }
 
 .category,
