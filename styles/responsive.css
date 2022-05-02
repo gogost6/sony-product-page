@@ -294,8 +294,8 @@
 
 @media screen and (max-width: 350px) {
     body {
-        -webkit-text-size-adjust: 0.28;
-        font-size-adjust: 0.28;
+        -webkit-text-size-adjust: 0.3;
+        font-size-adjust: 0.3;
     }
 
     .sony-center {
@@ -314,13 +314,33 @@
         flex-grow: 1;
     }
 
+    .description-container {
+        padding: 0 15px;
+    }
+
+    .preview-container {
+        height: 100px;
+    }
+
     .preview-img-wrapper {
         margin: 4px;
         width: 65px;
+        height: 65px;
+    }
+
+    .main-img-wrap {
+        height: 350px;
     }
 
     .chose-color {
         margin-right: 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 258px) {
+    body {
+        -webkit-text-size-adjust: 0.28;
+        font-size-adjust: 0.28;
     }
 }
