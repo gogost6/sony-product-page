@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         container.prepend(clone);
     }
 
-    if (window.innerWidth <= 640) {
+    if (window.innerWidth <= 965) {
         const cloneMainImgContainer = mainImgContainer.cloneNode(true);
         mainImgContainer.remove();
 
@@ -126,7 +126,7 @@ window.addEventListener('resize', function () {
 
         previewContainer.remove();
         container.prepend(clone);
-    } else if (window.innerWidth <= 1630 && window.innerWidth > 640) {
+    } else if (window.innerWidth <= 1630 && window.innerWidth > 965) {
         
         if(container.children[0].className === 'preview-container') {
             const clone = previewContainer.cloneNode(true);
@@ -139,7 +139,7 @@ window.addEventListener('resize', function () {
             mainImgContainer.remove();
             container.prepend(clone);
         }
-    } else if (window.innerWidth <= 640) {
+    } else if (window.innerWidth <= 965) {
 
         const cloneMainImgContainer = mainImgContainer.cloneNode(true);
         mainImgContainer.remove();
